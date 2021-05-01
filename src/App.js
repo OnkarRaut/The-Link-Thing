@@ -1,18 +1,11 @@
-import Link from "./components/Links/Link";
+import Links from "./components/Links/Links";
 import Navbar from "./components/Nav/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Link />
-      <Link />
-      <Link />
-      <Link />
-
-      <Link />
-      <Link />
-      <Link />
+      <Links />
     </div>
   );
 }
