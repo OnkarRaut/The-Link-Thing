@@ -6,6 +6,8 @@
 html,
 body {
   font-family: var(--font-inter);
+  height: 100%;
+  width: 100%;
 }
 
 .nav-container {
@@ -37,4 +39,12 @@ body {
   visibility: visible;
   left: 0;
   transform: scaleX(1);
+}
+
+.border-color-gray-light {
+  border-color: rgba(229, 231, 235, 1) !important;
+}
+
+.border-left-1 {
+  border-left-width: 1rem !important;
 }
