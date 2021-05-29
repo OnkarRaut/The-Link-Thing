@@ -45,6 +45,6 @@ body {
   border-color: rgba(229, 231, 235, 1) !important;
 }
 
-.border-left-1 {
-  border-left-width: 1rem !important;
+.border-left-link-accent {
+  border-left-width: 1.5rem !important;
 }

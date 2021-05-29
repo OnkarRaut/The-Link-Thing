@@ -1,0 +1,13 @@
+features:
+  - user signup: user should be able to signup to the site
+      send email validation token to the provided emal for signup
+  - user login: user should be able to login to the site if already signed in
+      should show validations for the input provided
+  - user delete: send and validated the confirmation token deletion
+      should get a confirmation for deletion of account
+      delete all the records created by that user
+  - create links: user should be able to create the links
+  - update links: user should be able to update the craeted links
+  - delete links: user should be able to delete the links
+  - share links: share links with registered users
+  - provide catagories: provide a category option for links to categorize the created links

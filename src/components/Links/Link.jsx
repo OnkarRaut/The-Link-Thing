@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Link(props) {
   const [active, setActive] = useState(false);
   return (
-    <div className="w-2/4 mx-auto h-full border-2 p-2 border-left-1 border-color-gray-light m-2">
+    <div className="w-2/4 mx-auto h-full border-2 p-2 border-left-link-accent border-gray-200 m-4">
       <div className="flex flex-row justify-center">
         <div className="flex-grow font-size-1">
           <h2 className="px-2 py-1">Get into the world of material ui</h2>
@@ -15,27 +15,26 @@ export default function Link(props) {
             https://material-ui.com/components/toggle-button/{" "}
           </h4>
         </div>
-        <div>
-          <div className="flex flex-col justify-between items-end">
-            <Switch
-              checked={active}
-              onChange={() => setActive(!active)}
-              name="check-active"
-              size="small"
-              color="primary"
-              inputProps={{ "aria-label": "secondary checkbox" }}
-            />
+        <div className="flex flex-col place-items-end space-between justify-end justify-between">
+          <Switch
+            className="ml-auto"
+            checked={active}
+            onChange={() => setActive(!active)}
+            name="check-active"
+            size="small"
+            color="primary"
+            inputProps={{ "aria-label": "secondary checkbox" }}
+          />
+          <div>
+            {" "}
+            <IconButton aria-label="edit">
+              <EditRoundedIcon fontSize="small" />
+            </IconButton>
+            <IconButton aria-label="delete">
+              <DeleteForeverRoundedIcon fontSize="small" />
+            </IconButton>
           </div>
         </div>
-      </div>
-      <div className="w-full flex justify-end pt-0 mt-0">
-        {" "}
-        <IconButton aria-label="edit">
-          <EditRoundedIcon fontSize="small" />
-        </IconButton>
-        <IconButton aria-label="delete">
-          <DeleteForeverRoundedIcon fontSize="small" />
-        </IconButton>
       </div>
     </div>
   );
